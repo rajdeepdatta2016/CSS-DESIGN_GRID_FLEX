@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 50px;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+.items {
+    position: absolute;
+    top: 45px;
+    left: 180px;
+}
+.ultraedit {
+    position: absolute;
+    left: 100px;
+    top: 38px;
+}
+.nav {
+    display: flex;
+    margin-top: 30px;
+}
+nav h1 {
+    font-size: 16px;
+}
+nav p {
+    font-size: 10px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 5px 20px;
+}
+
+svg {
+    height: 30px;
+    width: 30px;
+}
+main h1,main p {
+    text-align: center;
+    font-weight: normal;
+    color: black;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.downloads {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+svg {
+    height: 20px;
+    width: 20px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.hidden, .hidden2 {
+    display: none;
+}
+
+.product:hover .hidden{
+    background-color: #343333;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 60px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+.product:hover .hover {
+    display: block;
+    width: 300px;
+}
+.hover li {
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+.hover li:hover {
+    color: #969696;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+.nochange {
+    transform: rotate(0deg);
+    padding: 0px 10px;
+}
+.downloads:hover .hidden2 {
+    background-color: #343333;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+main {
+    width: 65vw;
+    margin: auto;
+}
+
+main h1 {
+    padding: 50px 10px;
+    font-size: 3.5rem;
+    font-weight:100;
+}
+main h1 span {
+    font-weight: bold;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    width: 100px;
+    height: 27px;
+}
+main .data1 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+main .button1 {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .button1 .button-mac-linux {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    background-color: rgb(0, 182, 209);
+    height: 50px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+main .button1:hover .button-mac-linux {
+    background-color: rgb(0, 151, 175);
+    transition: background-color 0.3s ease-in-out;
+}
+
+main .grid {
+    height: 100vh;
+    width: 100%;
+    margin-top: 80px;
+}
+
+main .grid .grid-heading {
+    height: 10%;
+    width: 100%;
+}
+
+main .grid-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+main .logo {
+    height: 50px;
+    width: 60px;
+}
+
+main .large {
+    font-size: 1.5rem;
+}
+main .small {
+    font-size: 0.8rem;
+}
+main .grid-content {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 20% 20% 20% 20%;
+    justify-content: space-between;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+main .grid-items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    position: relative;
+}
+
+main .grid-items .big {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+main .grid-items a {
+    text-decoration: none;
+    background-color: #5cb85c;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 0.7rem;
+}
+
+main .grid-items a:hover {
+    background-color: #388438;
+    transition: background-color 0.3s ease-in-out;
+}
+
+main .grid-items .small {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 60px;
+    color: gray;
+}
+
+main .grid-items .footer {
+    font-size: 0.6rem;
+    color: gray;
+    padding: 30px;
+}
+
+@media screen and (max-width: 774px) {
+    nav {
+        height: 300px;
+    }
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+    nav a {
+        font-size: 8px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+    }
+    nav li {
+        padding: none;
+        margin: 0;
+    }
+    nav li .svg {
+        padding: 0;
+        margin: 0;
+        height: 20px;
+        width: 20px;
+    }
+    .items {
+        position: absolute;
+        top: 40px;
+        left: 70px;
+    }
+    .ultraedit {
+        position: absolute;
+        left: 10px;
+        top: 30px;
+    }
+    html {
+        font-size: 10px;
+    }
+    main {
+        width: 90vw;
+        margin: auto;
+    }
+
+    main .grid {
+        height: 300vh;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    main .grid-content {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(12, 7%);
+        justify-content: center;
+        align-content: space-between;
+        row-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        height: 90%;
+        width: 100%;
+    }
+    .downloads:hover .hidden2 {
+        left: -180px;
+    }
+}
